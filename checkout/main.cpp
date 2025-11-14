@@ -4,25 +4,20 @@ using namespace std;
 
 int main() {
   int amount;       // количество разных товаров
-  double price[20]; // цена каждого товара
-  int num[20];      // количество каждого товара
-  int maxAmount = sizeof(num) / sizeof(num[0]);
-
   cout << "\nWelcome to GitHub Supermarket" << endl;
 
   do {
     cout << "Please provide an amount of goods you want to buy: ";
     cin >> amount;
 
-    if (amount > maxAmount) {
-      cout << "Error: max amount of goods is " << maxAmount
-           << ", try again\n\n";
-    } else if (amount < 0) {
-      cout << "Error: amount can't be lower than 0\n\n";
+    if (amount <= 0) {
+      cout << "Error: invalid amount\n\n";
     }
-  } while (amount > maxAmount || amount < 0);
+  } while (amount <= 0);
 
   cout << "Nice! Let's figure out the prices\n" << endl;
+  double price[amount]; // цена каждого товара
+  int num[amount];      // количество каждого товара
 
   // справочник кодов и цен
   int codes[]{2146, 5764, 6487, 1345, 7843};
@@ -31,14 +26,24 @@ int main() {
 
   for (int i = 0; i < amount; i++) {
     int inputMethod;
+    do {
     cout << "Item " << i + 1 << ": Choose input method:\n";
     cout << "1. Enter price manually\n";
     cout << "2. Enter product code\n";
     cin >> inputMethod;
+    if (inputMethod != 1 && inputMethod != 2) {
+      cout << "Error: Enter a valid input method number\n\n";
+    }
+    } while (inputMethod != 1 && inputMethod != 2);
 
     if (inputMethod == 1) {
+      do {
       cout << "Enter the price of item " << i + 1 << ": ";
       cin >> price[i];
+      if (price[i] <= 0) {
+        cout << "Error: Invalid price\n\n" ;
+      }
+      } while (price[i] <= 0);
     } else if (inputMethod == 2) {
       int code;
       bool found = false;
@@ -59,15 +64,17 @@ int main() {
         if (!found)
           cout << "Product not found. Try again.\n";
       }
-    } else {
-      cout << "Invalid choice. Try again.\n";
-      i--; // повторить итерацию
-      continue;
     }
 
+    do {
     cout << "How many of this item did you buy? ";
     cin >> num[i];
     cout << endl;
+
+    if (num[i] <= 0) {
+      cout << "Error: invalid amount\n\n";
+    }
+    } while (num [i] <= 0);
   }
 
   // расчёт итоговой стоимости

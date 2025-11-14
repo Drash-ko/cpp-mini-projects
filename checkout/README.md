@@ -10,6 +10,3 @@ Simple console-based supermarket checkout program written in C++.
   - 10% for totals over 500
   - 15% for totals over 1000
 - Displays total with two decimal precision
-
-## Notes
-This project is under active development — more features and improvements are planned.
