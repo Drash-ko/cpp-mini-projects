@@ -2,7 +2,7 @@
 
 A collection of small command-line applications built while learning modern C++.
 
-Unlike basic syntax exercises, these projects combine multiple language features to solve practical tasks and reinforce problem-solving skills.
+Each project combines multiple language concepts to solve practical tasks and reinforce problem-solving skills.
 
 ---
 
@@ -10,23 +10,23 @@ Unlike basic syntax exercises, these projects combine multiple language features
 
 ### 🧮 Calculator
 
-A simple CLI calculator supporting basic arithmetic operations.
+A simple command-line calculator created to practice arithmetic operations, program flow, and user interaction.
 
-**Concepts used**
+**Concepts practiced**
 
 - Functions
-- Conditionals
+- Conditional statements
 - Loops
 - User input
-- Error handling
+- Basic error handling
 
 ---
 
 ### 🛒 Checkout System
 
-A command-line checkout system simulating a small retail purchase workflow.
+A command-line checkout application created to practice building larger, structured console programs.
 
-**Concepts used**
+**Concepts practiced**
 
 - Dynamic arrays
 - Functions
@@ -37,28 +37,29 @@ A command-line checkout system simulating a small retail purchase workflow.
 
 ### 📋 Day Assessment
 
-A small interactive program for practicing conditional logic and user interaction.
+A small interactive console application created to practice conditional logic and user interaction.
 
-**Concepts used**
+**Concepts practiced**
 
-- Branching
+- Conditional statements
 - Input processing
-- Control flow
+- Program flow
 
 ---
 
 ## Purpose
 
-This repository documents my progress while learning C++ by building complete, small-scale applications instead of isolated code snippets.
+This repository documents my progress while learning modern C++ by building complete, small-scale applications instead of isolated code snippets.
 
-Each project focuses on writing clean, readable code while gradually introducing more advanced language features.
+Each project focuses on writing clean, readable code while gradually introducing new language features and programming concepts.
 
 ---
 
 ## Future plans
 
 - File handling
-- Classes & OOP
+- Object-Oriented Programming (OOP)
 - STL containers
 - Algorithms
 - Templates
+- Memory management
