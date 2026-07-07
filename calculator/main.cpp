@@ -2,18 +2,15 @@
 using namespace std;
 
 int main() {
-    // CLI Calculator
     int a, b, operation;
 
     cout << "Welcome to the calculator.\n";
 
-    // Ввод чисел
     cout << "Please write the first number: ";
     cin >> a;
     cout << "Please write the second number: ";
     cin >> b;
 
-    // Выбор операции
     cout << "Now choose a mathematical operation:\n"
          << "1. Addition\n"
          << "2. Subtraction\n"
@@ -21,7 +18,6 @@ int main() {
          << "4. Multiply\n";
     cin >> operation;
 
-    // Выполнение выбранной операции
     switch (operation) {
         case 1:
             cout << "Result: " << a << " + " << b << " = " << a + b << endl;

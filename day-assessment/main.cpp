@@ -2,7 +2,6 @@
 using namespace std;
 
 int main() {
-  // Day Assessment Program
   int productivity, mood, energy;
   const int MIN = 1, MAX = 5;
   int attempt = 0;
@@ -11,7 +10,6 @@ int main() {
   cout << "Welcome to the day assessment program!" << endl;
 
   do {
-    // Ввод productivity
     do {
       cout << "Please provide an assessment for your today's productivity "
               "(1-5): ";
@@ -21,7 +19,6 @@ int main() {
       }
     } while (productivity < MIN || productivity > MAX);
 
-    // Ввод mood
     do {
       cout << "What about today's mood? (1-5): ";
       cin >> mood;
@@ -30,7 +27,6 @@ int main() {
       }
     } while (mood < MIN || mood > MAX);
 
-    // Ввод energy
     do {
       cout << "Describe your energy level throughout the day (1-5): ";
       cin >> energy;
@@ -39,10 +35,8 @@ int main() {
       }
     } while (energy < MIN || energy > MAX);
 
-    // Рассчет среднего
     int averageValue = (productivity + mood + energy) / 3;
 
-    // Вывод оценки
     switch (averageValue) {
     case 1:
     case 2:
@@ -64,7 +58,6 @@ int main() {
            << endl;
     }
 
-    // Повтор программы
     cout << "Do you want to take the test again? (y/n): ";
     cin >> retry;
     ++attempt;
