@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420" role="img" aria-label="Checkout terminal demo">
+  <rect width="920" height="420" rx="12" fill="#101418"/>
+  <rect x="0" y="0" width="920" height="38" rx="12" fill="#1f2933"/>
+  <circle cx="24" cy="19" r="6" fill="#ff5f56"/>
+  <circle cx="46" cy="19" r="6" fill="#ffbd2e"/>
+  <circle cx="68" cy="19" r="6" fill="#27c93f"/>
+  <text x="24" y="72" fill="#d8dee9" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="18">$ ./checkout</text>
+  <text x="24" y="112" fill="#8be9fd" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="18">Welcome to GitHub Supermarket</text>
+  <text x="24" y="150" fill="#d8dee9" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="18">Please provide an amount of goods you want to buy: 2</text>
+  <text x="24" y="188" fill="#d8dee9" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="18">Item 1: Choose input method: 2</text>
+  <text x="24" y="226" fill="#d8dee9" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="18">Please provide a code: 6487</text>
+  <text x="24" y="264" fill="#a3e635" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="18">Recognized. Price: 7.6</text>
+  <text x="24" y="302" fill="#d8dee9" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="18">How many of this item did you buy? 3</text>
+  <text x="24" y="340" fill="#d8dee9" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="18">Item 2: manual price 12.50, quantity 2</text>
+  <text x="24" y="378" fill="#facc15" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="18">Payable: 47.80</text>
+</svg>

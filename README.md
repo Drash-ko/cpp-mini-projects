@@ -1,65 +1,45 @@
 # C++ Mini Projects
 
-A collection of small command-line applications built while learning modern C++.
+Small command-line applications built while practicing C++ fundamentals. Each
+folder is a standalone program with its own `main.cpp` and README.
 
-Each project combines multiple language concepts to solve practical tasks and reinforce problem-solving skills.
-
----
+![Checkout terminal demo](docs/screenshots/checkout.svg)
 
 ## Projects
 
-### 🧮 Calculator
+| Project | What it demonstrates |
+| --- | --- |
+| [Calculator](calculator/) | arithmetic operations, `switch`, user input |
+| [Checkout System](checkout/) | validation, product code lookup, `vector`, totals and discounts |
+| [Day Assessment](day-assessment/) | loops, conditionals, repeated prompts, simple scoring |
 
-A simple command-line calculator created to practice arithmetic operations, program flow, and user interaction.
+## Build and run
 
-**Concepts practiced**
+Use any C++17 compiler. Example with `clang++`:
 
-- Functions
-- Conditional statements
-- Loops
-- User input
-- Basic error handling
+```bash
+clang++ -std=c++17 -Wall -Wextra -pedantic calculator/main.cpp -o calculator-app
+./calculator-app
+```
 
----
+Build another project by replacing the source path:
 
-### 🛒 Checkout System
+```bash
+clang++ -std=c++17 -Wall -Wextra -pedantic checkout/main.cpp -o checkout-app
+clang++ -std=c++17 -Wall -Wextra -pedantic day-assessment/main.cpp -o day-assessment-app
+```
 
-A command-line checkout application created to practice building larger, structured console programs.
+## Repository layout
 
-**Concepts practiced**
+```text
+.
+├── calculator/
+├── checkout/
+├── day-assessment/
+└── docs/screenshots/
+```
 
-- Dynamic arrays
-- Functions
-- Input validation
-- Modular program structure
+## Notes
 
----
-
-### 📋 Day Assessment
-
-A small interactive console application created to practice conditional logic and user interaction.
-
-**Concepts practiced**
-
-- Conditional statements
-- Input processing
-- Program flow
-
----
-
-## Purpose
-
-This repository documents my progress while learning modern C++ by building complete, small-scale applications instead of isolated code snippets.
-
-Each project focuses on writing clean, readable code while gradually introducing new language features and programming concepts.
-
----
-
-## Future plans
-
-- File handling
-- Object-Oriented Programming (OOP)
-- STL containers
-- Algorithms
-- Templates
-- Memory management
+These are learning projects, intentionally kept small and readable. The code
+uses only the C++ standard library and does not require external dependencies.
